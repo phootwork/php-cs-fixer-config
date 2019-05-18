@@ -1,0 +1,23 @@
+{
+	"name" : "gossi/php-cs-fixer-config",
+	"type" : "library",
+	"description" : "shared config for php-cs-fixer",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Thomas Gossmann",
+			"homepage" : "http://gos.si"
+		}
+	],
+	"keywords" : [
+		"codestyle"
+	],
+	"autoload" : {
+		"psr-4" : {
+			"gossi\\fixer\\" : "src/"
+		}
+	},
+	"require" : {
+		"php" : ">=7.2",
+		"friendsofphp/php-cs-fixer" : "^2.15"
+	}
+}
