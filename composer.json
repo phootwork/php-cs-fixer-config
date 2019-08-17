@@ -1,5 +1,5 @@
 {
-	"name" : "gossi/php-cs-fixer-config",
+	"name" : "phootwork/php-cs-fixer-config",
 	"type" : "library",
 	"description" : "shared config for php-cs-fixer",
 	"license" : "MIT",
@@ -13,7 +13,7 @@
 	],
 	"autoload" : {
 		"psr-4" : {
-			"gossi\\fixer\\" : "src/"
+			"phootwork\\fixer\\" : "src/"
 		}
 	},
 	"require" : {

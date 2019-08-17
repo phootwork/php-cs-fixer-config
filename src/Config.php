@@ -6,7 +6,7 @@ use PhpCsFixer\Config as BaseConfig;
 class Config extends BaseConfig {
 
 	public function __construct() {
-		parent::__construct('gossi');
+		parent::__construct('phootwork');
 		$this->setRiskyAllowed(true);
 	}
 	

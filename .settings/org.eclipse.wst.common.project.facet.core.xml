@@ -3,6 +3,6 @@
   <fixed facet="php.core.component"/>
   <fixed facet="php.component"/>
   <installed facet="php.core.component" version="1"/>
-  <installed facet="php.component" version="7.3"/>
   <installed facet="php.composer.component" version="1"/>
+  <installed facet="php.component" version="7.2"/>
 </faceted-project>

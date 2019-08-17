@@ -9,7 +9,7 @@ It's based on the ideas of [`prooph/php-cs-fixer-config`](https://github.com/pro
 Run
 
 ```
-$ composer require --dev gossi/php-cs-fixer-config
+$ composer require --dev phootwork/php-cs-fixer-config
 ```
 
 Add to composer.json;
@@ -33,7 +33,7 @@ Create a configuration file `.php_cs` in the root of your project:
 ```php
 <?php
 
-$config = new gossi\fixer\Config();
+$config = new phootwork\fixer\Config();
 $config->getFinder()
     ->exclude(['fixture'])
     ->in(__DIR__ . '/src')
@@ -131,3 +131,7 @@ echo "pre commit hook finish"
 ## License
 
 This package is licensed using the MIT License.
+
+## Editor/IDE Support
+
+This repo contains a `editors/` folder, which has contains files to apply formatting based on these rules into your editor or IDE. You can have a look, if your editor/IDE is supported. A pull request to support yours is welcome
