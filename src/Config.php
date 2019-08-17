@@ -1,5 +1,5 @@
 <?php
-namespace gossi\fixer;
+namespace phootwork\fixer;
 
 use PhpCsFixer\Config as BaseConfig;
 
