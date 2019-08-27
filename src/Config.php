@@ -13,21 +13,44 @@ class Config extends BaseConfig {
 	public function getRules(): array {
 // 		'linefeed'
 		return [
+			'align_multiline_comment' => [
+				'comment_type' => 'phpdocs_only'
+			],
 			'array_syntax' => [
 				'syntax' => 'short'
 			],
+			'binary_operator_spaces' => [
+				'default' => 'single_space',
+				'operators' => []
+			],
 			'blank_line_after_namespace' => true,
+			'blank_line_before_statement' => [
+				'statements' => [
+					'return', 'throw', 'try', 'die'
+				]
+			],
+			'braces' => [
+				'position_after_functions_and_oop_constructs' => 'same'
+			],
+			'cast_spaces' => [
+				'space' => 'single'
+			],
+			'compact_nullable_typehint' => true,
 			'concat_space' => [
 				'spacing' => 'one'
 			],
+			'declare_strict_types ' => true,
 			'encoding' => true,
+			'elseif' => true,
 			'full_opening_tag' => true,
 			'function_declaration' => [
 				'closure_function_spacing' => 'one'
 			],
 			'function_typehint_space' => true,
+			'lowercase_cast' => true,
 			'lowercase_constants' => true,
 			'lowercase_keywords' => true,
+			'lowercase_static_reference ' => true,
 			'method_argument_space' => true,
 			'no_blank_lines_after_phpdoc' => true,
 			'no_closing_tag' => true,
@@ -46,8 +69,13 @@ class Config extends BaseConfig {
 			'no_whitespace_before_comma_in_array' => true,
 			'no_whitespace_in_blank_line' => true,
 			'ordered_imports' => true,
+			'phpdoc_order ' => true,
 			'phpdoc_scalar' => true,
+			'phpdoc_separation' => true,
 			'phpdoc_types' => true,
+			'return_type_declaration' => [
+				'space_before' => 'none'
+			],
 			'self_accessor' => true,
 			'single_blank_line_at_eof' => true,
 			'single_import_per_statement' => true,
@@ -58,4 +86,3 @@ class Config extends BaseConfig {
 		];
 	}
 }
-
