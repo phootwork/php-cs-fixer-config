@@ -9,7 +9,7 @@ class Config extends BaseConfig {
 		parent::__construct('phootwork');
 		$this->setRiskyAllowed(true);
 	}
-	
+
 	public function getRules(): array {
 // 		'linefeed'
 		return [
@@ -39,7 +39,7 @@ class Config extends BaseConfig {
 			'concat_space' => [
 				'spacing' => 'one'
 			],
-			'declare_strict_types ' => true,
+			'declare_strict_types' => true,
 			'encoding' => true,
 			'elseif' => true,
 			'full_opening_tag' => true,
@@ -50,7 +50,7 @@ class Config extends BaseConfig {
 			'lowercase_cast' => true,
 			'lowercase_constants' => true,
 			'lowercase_keywords' => true,
-			'lowercase_static_reference ' => true,
+			'lowercase_static_reference' => true,
 			'method_argument_space' => true,
 			'no_blank_lines_after_phpdoc' => true,
 			'no_closing_tag' => true,
@@ -69,7 +69,7 @@ class Config extends BaseConfig {
 			'no_whitespace_before_comma_in_array' => true,
 			'no_whitespace_in_blank_line' => true,
 			'ordered_imports' => true,
-			'phpdoc_order ' => true,
+			'phpdoc_order' => true,
 			'phpdoc_scalar' => true,
 			'phpdoc_separation' => true,
 			'phpdoc_types' => true,
