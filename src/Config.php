@@ -8,10 +8,11 @@ class Config extends BaseConfig {
 	public function __construct() {
 		parent::__construct('phootwork');
 		$this->setRiskyAllowed(true);
+		$this->setIndent("\t");
+		$this->setLineEnding("\n");
 	}
 
 	public function getRules(): array {
-// 		'linefeed'
 		return [
 			'align_multiline_comment' => [
 				'comment_type' => 'phpdocs_only'
@@ -47,6 +48,7 @@ class Config extends BaseConfig {
 				'closure_function_spacing' => 'one'
 			],
 			'function_typehint_space' => true,
+			'indentation_type' => true,
 			'lowercase_cast' => true,
 			'lowercase_constants' => true,
 			'lowercase_keywords' => true,
