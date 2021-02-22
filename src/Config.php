@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 namespace phootwork\fixer;
 
 use PhpCsFixer\Config as BaseConfig;
@@ -13,7 +13,7 @@ class Config extends BaseConfig {
 	}
 
 	public function getRules(): array {
-		return [
+		$rules = [
 			'align_multiline_comment' => [
 				'comment_type' => 'phpdocs_only'
 			],
@@ -86,5 +86,12 @@ class Config extends BaseConfig {
 			'visibility_required' => true,
 			'whitespace_after_comma_in_array' => true
 		];
+
+		if (phpversion() >= '8.0') {
+			//temporary workaround to avoid spaces between PHP 8 union types
+			$rules['binary_operator_spaces']['operators'] = ['|' => null];
+		}
+
+		return $rules;
 	}
 }
