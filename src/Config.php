@@ -1,10 +1,9 @@
-<?php
+<?php declare(strict_types=1);
 namespace phootwork\fixer;
 
 use PhpCsFixer\Config as BaseConfig;
 
 class Config extends BaseConfig {
-
 	public function __construct() {
 		parent::__construct('phootwork');
 		$this->setRiskyAllowed(true);
@@ -21,14 +20,11 @@ class Config extends BaseConfig {
 				'syntax' => 'short'
 			],
 			'binary_operator_spaces' => [
-				'default' => 'single_space',
-				'operators' => []
+				'operators' => ['|' => null]
 			],
 			'blank_line_after_namespace' => true,
 			'blank_line_before_statement' => [
-				'statements' => [
-					'return', 'throw', 'try', 'die'
-				]
+				'statements' => ['return', 'throw', 'try', 'exit']
 			],
 			'braces' => [
 				'position_after_functions_and_oop_constructs' => 'same'
@@ -40,6 +36,9 @@ class Config extends BaseConfig {
 			'concat_space' => [
 				'spacing' => 'one'
 			],
+			'constant_case' => [
+				'case' => 'lower'
+			],
 			'declare_strict_types' => true,
 			'encoding' => true,
 			'elseif' => true,
@@ -50,7 +49,6 @@ class Config extends BaseConfig {
 			'function_typehint_space' => true,
 			'indentation_type' => true,
 			'lowercase_cast' => true,
-			'lowercase_constants' => true,
 			'lowercase_keywords' => true,
 			'lowercase_static_reference' => true,
 			'method_argument_space' => true,
