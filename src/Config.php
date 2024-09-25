@@ -26,13 +26,14 @@ class Config extends BaseConfig {
 			'blank_line_before_statement' => [
 				'statements' => ['return', 'throw', 'try', 'exit']
 			],
-			'braces' => [
-				'position_after_functions_and_oop_constructs' => 'same'
+			'braces_position' => [
+				'classes_opening_brace' => 'same_line',
+				'functions_opening_brace' => 'same_line'
 			],
 			'cast_spaces' => [
 				'space' => 'single'
 			],
-			'compact_nullable_typehint' => true,
+			'compact_nullable_type_declaration' => true,
 			'concat_space' => [
 				'spacing' => 'one'
 			],
@@ -46,7 +47,6 @@ class Config extends BaseConfig {
 			'function_declaration' => [
 				'closure_function_spacing' => 'one'
 			],
-			'function_typehint_space' => true,
 			'indentation_type' => true,
 			'lowercase_cast' => true,
 			'lowercase_keywords' => true,
@@ -62,8 +62,7 @@ class Config extends BaseConfig {
 			'no_leading_namespace_whitespace' => true,
 			'no_multiline_whitespace_around_double_arrow' => true,
 			'no_spaces_after_function_name' => true,
-			'no_spaces_inside_parenthesis' => true,
-			'no_trailing_comma_in_singleline_array' => true,
+			'no_trailing_comma_in_singleline' => ['elements' => ['arguments', 'array_destructuring', 'array', 'group_import']],
 			'no_trailing_whitespace' => true,
 			'no_unused_imports' => true,
 			'no_whitespace_before_comma_in_array' => true,
@@ -81,6 +80,8 @@ class Config extends BaseConfig {
 			'single_import_per_statement' => true,
 			'single_line_after_imports' => true,
 			'single_quote' => true,
+			'spaces_inside_parentheses' => ['space' => 'none'],
+			'type_declaration_spaces' => ['elements' => ['function', 'property']],
 			'visibility_required' => true,
 			'whitespace_after_comma_in_array' => true
 		];
