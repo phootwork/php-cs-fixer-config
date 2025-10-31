@@ -82,14 +82,9 @@ class Config extends BaseConfig {
 			'single_quote' => true,
 			'spaces_inside_parentheses' => ['space' => 'none'],
 			'type_declaration_spaces' => ['elements' => ['function', 'property']],
-			'visibility_required' => true,
+			'modifier_keywords' => true,
 			'whitespace_after_comma_in_array' => true
 		];
-
-		if (phpversion() >= '8.0') {
-			//temporary workaround to avoid spaces between PHP 8 union types
-			$rules['binary_operator_spaces']['operators'] = ['|' => null];
-		}
 
 		return $rules;
 	}
